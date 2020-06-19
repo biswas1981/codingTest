@@ -15,7 +15,7 @@ namespace PromotionEngine.BL
         {
             try
             {
-                string json = ReadJsonFile("\\App_Data\\SkuItemRate.json");
+                var json = ReadJsonFile("\\App_Data\\SkuItemRate.json");
                 var skus = JsonConvert.DeserializeObject<List<SkuItem>>(json);
                 var result = skus.Where(a => string.Equals(a.ItemId, itemId, StringComparison.OrdinalIgnoreCase) == true).FirstOrDefault() ?? null;
                 if (result != null)
