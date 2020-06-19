@@ -63,8 +63,6 @@ namespace PromotionEngine.BL
             return (groupValue * 45) + (oddValue * GetSKUItemRate("B"));
         }
     }
-
-
     public class ActivePromoRuleForCAndD : SKU, IPromotion
     {
         public CartItem ItemC { get; set; }
