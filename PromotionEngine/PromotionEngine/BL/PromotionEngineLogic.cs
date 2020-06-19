@@ -10,8 +10,6 @@ namespace PromotionEngine.BL
     {
         int GetPromotionValue();
     }
-
-
     public abstract class SKU
     {
         public int GetSKUItemRate(string itemId)
@@ -51,8 +49,6 @@ namespace PromotionEngine.BL
             return (groupValue * 130) + (oddValue * GetSKUItemRate("A"));
         }
     }
-
-
     public class ActivePromoRuleForB : SKU, IPromotion
     {
         public CartItem ItemB { get; set; }

@@ -3,7 +3,6 @@
     public class CartItem
     {
         public string SkuId { get; set; }
-        public int Quentity { get; set; }
-       
+        public int Quentity { get; set; }     
     }
 }
