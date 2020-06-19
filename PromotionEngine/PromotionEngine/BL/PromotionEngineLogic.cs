@@ -104,7 +104,6 @@ namespace PromotionEngine.BL
         public int DoCalculation(List<CartItem> cart)
         {
             int result = 0;
-
             cart.ForEach(x =>
             {
                 if (x.SkuId == "A")
