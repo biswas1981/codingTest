@@ -23,6 +23,7 @@ namespace PromotionEngine
                     flag = false;
                 }
             }
+            //Call logic
             int result = logic.DoCalculation(items.GroupBy(g => g).Select(s => new CartItem { SkuId=s.Key, Quentity=s.Count() }).ToList());
             Console.WriteLine("Total : " + result);
 
