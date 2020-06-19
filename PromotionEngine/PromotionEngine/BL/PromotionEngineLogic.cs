@@ -5,7 +5,6 @@ using System.Linq;
 
 namespace PromotionEngine.BL
 {
-
     public interface IPromotion
     {
         int GetPromotionValue();
