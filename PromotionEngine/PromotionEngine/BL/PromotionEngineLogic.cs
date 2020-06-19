@@ -89,7 +89,6 @@ namespace PromotionEngine.BL
             }
             else if (ItemC.Quentity > 0 && ItemD.Quentity == 0)
             {
-
                 result += ItemC.Quentity * GetSKUItemRate("C");
             }
             else if (ItemC.Quentity == 0 && ItemD.Quentity > 0)
