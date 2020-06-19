@@ -129,8 +129,6 @@ namespace PromotionEngine.BL
                     result += promo.GetPromotionValue();
                 }
             });
-
-
             var cAndD = cart.Where(a => a.SkuId == "C" || a.SkuId == "D").ToList();
             if (cAndD != null && cAndD.Count > 0)
             {
