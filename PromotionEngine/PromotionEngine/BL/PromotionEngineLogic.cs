@@ -80,7 +80,6 @@ namespace PromotionEngine.BL
             {
                 ItemD = new BL.CartItem { SkuId = "D", Quentity = 0 };
             }
-
             if (ItemC.Quentity > 0 && ItemD.Quentity > 0 && ItemC.Quentity > ItemD.Quentity)
             {
                 result += 30;
@@ -93,8 +92,7 @@ namespace PromotionEngine.BL
             }
             else if (ItemC.Quentity > 0 && ItemD.Quentity > 0 && ItemC.Quentity == ItemD.Quentity)
             {
-                result += (ItemC.Quentity * 30);
-                
+                result += (ItemC.Quentity * 30);              
             }
             else if (ItemC.Quentity > 0 && ItemD.Quentity == 0)
             {
@@ -103,13 +101,11 @@ namespace PromotionEngine.BL
             }
             else if (ItemC.Quentity == 0 && ItemD.Quentity > 0)
             {
-
                 result += ItemD.Quentity * GetSKUItemRate("D");
             }
             return result;
         }
     }
-
     public class PromotionEngineLogic
     {
         public int DoCalculation(List<CartItem> cart)
