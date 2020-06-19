@@ -9,7 +9,7 @@ namespace PromotionEngine
     {
         static void Main(string[] args)
         {
-            PromotionEngineLogic logic = new BL.PromotionEngineLogic();
+           var logic = new BL.PromotionEngineLogic();
             var items = new List<string>();
             bool flag = true;
             while (flag)
