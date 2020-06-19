@@ -99,6 +99,7 @@ namespace PromotionEngine.BL
             return result;
         }
     }
+
     public class PromotionEngineLogic
     {
         public int DoCalculation(List<CartItem> cart)
