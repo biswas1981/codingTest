@@ -19,6 +19,7 @@ namespace PromotionEngine
                 items.Add(id);
 
                 Console.WriteLine("================================");
+
                 if (Console.ReadKey().Key == ConsoleKey.Escape)
                 {
                     flag = false;
