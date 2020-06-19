@@ -1,0 +1,18 @@
+﻿[
+  {
+    "ItemId": "A",
+    "Rate": 50
+  },
+  {
+    "ItemId": "B",
+    "Rate": 30
+  },
+  {
+    "ItemId": "C",
+    "Rate": 20
+  },
+  {
+    "ItemId": "D",
+    "Rate": 15
+  }
+]
