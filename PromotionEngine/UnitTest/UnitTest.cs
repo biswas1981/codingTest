@@ -14,7 +14,7 @@ namespace UnitTest
             items.Add(new CartItem { SkuId = "A", Quentity = 1 });
             items.Add(new CartItem { SkuId = "B", Quentity = 1 });
             items.Add(new CartItem { SkuId = "C", Quentity = 1 });
-            new PromotionEngine.BL.PromotionEngineLogic().DoCalculation(items);
+           int r= new PromotionEngine.BL.PromotionEngineLogic().DoCalculation(items);
 
         }
 
@@ -26,7 +26,7 @@ namespace UnitTest
             items.Add(new CartItem { SkuId = "A", Quentity = 5 });
             items.Add(new CartItem { SkuId = "B", Quentity = 5 });
             items.Add(new CartItem { SkuId = "C", Quentity = 1 });
-            new PromotionEngine.BL.PromotionEngineLogic().DoCalculation(items);
+          int r =  new PromotionEngine.BL.PromotionEngineLogic().DoCalculation(items);
 
         }
 
@@ -39,7 +39,7 @@ namespace UnitTest
             items.Add(new CartItem { SkuId = "B", Quentity = 5 });
             items.Add(new CartItem { SkuId = "C", Quentity = 1 });
             items.Add(new CartItem { SkuId = "D", Quentity = 1 });
-            new PromotionEngine.BL.PromotionEngineLogic().DoCalculation(items);
+           int r= new PromotionEngine.BL.PromotionEngineLogic().DoCalculation(items);
 
         }
     }

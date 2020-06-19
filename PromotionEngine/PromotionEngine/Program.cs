@@ -17,6 +17,7 @@ namespace PromotionEngine
                 Console.Write("Enter SKU Id : ");
                 string id = Console.ReadLine();
                 items.Add(id);
+
                 Console.WriteLine("================================");
                 if (Console.ReadKey().Key == ConsoleKey.Escape)
                 {
