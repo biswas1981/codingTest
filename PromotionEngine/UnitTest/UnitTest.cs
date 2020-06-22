@@ -10,11 +10,8 @@ namespace UnitTest
         public void TestMethod1()
         {
             //First  
-            var items = new System.Collections.Generic.List<CartItem>();
-            items.Add(new CartItem { SkuId = "A", Quentity = 1 });
-            items.Add(new CartItem { SkuId = "B", Quentity = 1 });
-            items.Add(new CartItem { SkuId = "C", Quentity = 1 });
-           int r= new PromotionEngine.BL.PromotionEngineLogic().DoCalculation(items);
+            var items = new System.Collections.Generic.List<string>() { "A", "B", "C" };
+            int r = new PromotionEngine.BL.PromotionEngineLogic().DoCalculation(items);
 
         }
 
@@ -22,11 +19,8 @@ namespace UnitTest
         public void TestMethod2()
         {
             //Second Test  
-            var items = new System.Collections.Generic.List<CartItem>();
-            items.Add(new CartItem { SkuId = "A", Quentity = 5 });
-            items.Add(new CartItem { SkuId = "B", Quentity = 5 });
-            items.Add(new CartItem { SkuId = "C", Quentity = 1 });
-          int r =  new PromotionEngine.BL.PromotionEngineLogic().DoCalculation(items);
+            var items = new System.Collections.Generic.List<string>() { "A", "A", "A", "A", "A", "B", "B", "B", "B", "B", "C" };
+            int r = new PromotionEngine.BL.PromotionEngineLogic().DoCalculation(items);
 
         }
 
@@ -34,12 +28,8 @@ namespace UnitTest
         public void TestMethod3()
         {
             //Thisrd Test  
-            var items = new System.Collections.Generic.List<CartItem>();
-            items.Add(new CartItem { SkuId = "A", Quentity = 3 });
-            items.Add(new CartItem { SkuId = "B", Quentity = 5 });
-            items.Add(new CartItem { SkuId = "C", Quentity = 1 });
-            items.Add(new CartItem { SkuId = "D", Quentity = 1 });
-           int r= new PromotionEngine.BL.PromotionEngineLogic().DoCalculation(items);
+            var items = new System.Collections.Generic.List<string>() { "A", "A", "A", "B", "B", "B", "B", "B", "C", "D" };
+            int r = new PromotionEngine.BL.PromotionEngineLogic().DoCalculation(items);
 
         }
     }

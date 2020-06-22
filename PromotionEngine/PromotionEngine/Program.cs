@@ -26,7 +26,7 @@ namespace PromotionEngine
                 }
             }
             //Call logic
-            int result = logic.DoCalculation(items.GroupBy(g => g).Select(s => new CartItem { SkuId=s.Key, Quentity=s.Count() }).ToList());
+            int result = logic.DoCalculation(items);
             //Show result
             Console.WriteLine("Total : " + result);
 

@@ -101,8 +101,9 @@ namespace PromotionEngine.BL
 
     public class PromotionEngineLogic
     {
-        public int DoCalculation(List<CartItem> cart)
+        public int DoCalculation(List<string>  items)
         {
+            List<CartItem> cart = items.GroupBy(g => g).Select(s => new CartItem { SkuId = s.Key, Quentity = s.Count() }).ToList();
             int result = 0;
             cart.ForEach(x =>
             {
